@@ -37,7 +37,7 @@ body {
 
 /* --- Premium Macro Grid --- */
 .bg-macro-grid {
-  background-size: 75vw 70vh; 
+  background-size: 5vw 10vh; 
   
   
   background-position: center; 
@@ -49,11 +49,11 @@ body {
 }
 
 
-.dark .bg-macro-grid {
+/* .dark .bg-macro-grid {
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-}
+} */
 
 
 .bg-grid-mask {

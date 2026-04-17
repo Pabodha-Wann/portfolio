@@ -1,5 +1,6 @@
 import About from "@/components/About"
 import Hero from "@/components/Hero"
+import Projects from "@/components/Projects"
 import Technologies from "@/components/Technologies"
 import { Particles } from "@/components/ui/particles"
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Technologies />
+        <Projects />
       </div>
 
     </div>

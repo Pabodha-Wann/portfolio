@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/providers/Providers";
 import Navbar from "@/components/Navbar";
+import { Particles } from "@/components/ui/particles";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
+        {/* <div className="fixed inset-0 -z-10 pointer-events-none">
+          <Particles />
+        </div> */}
         <Providers>
           <Navbar />
           {children}

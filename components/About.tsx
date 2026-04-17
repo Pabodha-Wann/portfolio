@@ -47,9 +47,8 @@ const slideIn = {
           
           
           <div className="mb-6 flex items-center gap-2">
-            <div className="h-px w-8 bg-slate-600" />
             <span className="font-mono text-[11px] font-bold tracking-[0.3em] text-purple-700 uppercase">
-              ABOUT ME
+              // ABOUT ME
             </span>
           </div>
 

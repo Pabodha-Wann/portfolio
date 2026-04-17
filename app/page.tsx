@@ -6,6 +6,7 @@ import Technologies from "@/components/Technologies"
 import { Particles } from "@/components/ui/particles"
 import Footer from "@/components/Footer"
 import ScrollToTop from "@/components/helper/ScrollToTop"
+import Contact from "@/components/Contact"
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Technologies />
         <Projects />
         <Blogs/>
+        <Contact />
         
         <div className="mt-auto">
           <Footer />

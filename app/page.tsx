@@ -1,4 +1,5 @@
 import About from "@/components/About"
+import Blogs from "@/components/Blog"
 import Hero from "@/components/Hero"
 import Projects from "@/components/Projects"
 import Technologies from "@/components/Technologies"
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <Technologies />
         <Projects />
+        <Blogs/>
       </div>
 
     </div>

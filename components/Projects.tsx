@@ -125,13 +125,7 @@ const Projects = () => {
       
       {/* Header */}
       <div className="mb-20 px-6 md:px-12">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="h-1 w-1 rounded-full bg-purple-600" />
-          <span className="font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
-            Selected Works
-          </span>
-        </div>
-        <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+        <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl uppercase">
           Featured Architecture
         </h2>
       </div>

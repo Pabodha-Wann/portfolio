@@ -1,5 +1,5 @@
 "use client"
-import { Download } from "lucide-react"
+import {  ArrowRight, Download } from "lucide-react"
 import {AnimatePresence,motion}  from "framer-motion"
 
 
@@ -31,11 +31,11 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeInOut" }}
                 className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-slate-200/50 bg-white/40 px-4 py-1.5 text-xs font-semibold tracking-widest text-slate-700 backdrop-blur-md dark:border-slate-700/50 dark:bg-black/40 dark:text-slate-300 sm:text-sm">
                       <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-400 opacity-75"></span>
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-purple-500"></span>
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
                       </span>
                       
-                      <p className="font-mono text-xs">ENGINEERING DIGITAL EXPERIENCES</p>
+                      <p className="font-mono text-xs uppercase">Available for internship</p>
                 </motion.div>
 
                 <motion.h1 
@@ -49,22 +49,34 @@ const Hero = () => {
                 </motion.h1>
 
                 <motion.p 
-                  initial={{ opacity: 0, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: false, amount: 0.1 }}
                   transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
                   className="text-lg font-medium text-slate-600 dark:text-slate-400">
                   Full-Stack Developer & Undergraduate.
                 </motion.p>
 
-                <motion.button 
-                initial={{ opacity: 0, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.1 }}
-                  transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
-                className="bg-black text-white font-mono py-3 px-7 w-fit rounded-3xl flex gap-3 justify-center items-center dark:bg-white dark:text-black cursor-pointer">
-                  Resume <Download size={16}/>
-                </motion.button>
+                <div className="flex gap-3">
+                  <motion.button 
+                  initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.1 }}
+                    transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
+                    className="bg-black text-white font-mono py-3 px-7 w-fit rounded-3xl flex gap-3 justify-center items-center dark:bg-white dark:text-black cursor-pointer">
+                    Resume <Download size={16}/>
+                  </motion.button>
+
+                  <motion.a
+                    href="#work"
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.1 }}
+                    transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
+                    className="bg-transperent text-black font-mono py-3 px-7 w-fit rounded-3xl flex gap-3 justify-center items-center border broder-black dark:bg-transperent dark:text-white dark:border-white cursor-pointer">
+                    View My work <ArrowRight size={16}/>
+                  </motion.a>
+              </div>
       </div>
 
     </div>

@@ -16,7 +16,7 @@ const slideIn:Variants = {
 }
 
   return (
-    <section className="w-full border-b border-slate-400/50 px-6 py-32 dark:border-slate-600/50 md:px-12">
+    <section id="about" className="w-full border-b border-slate-400/50 px-6 py-32 dark:border-slate-600/50 md:px-12">
       <motion.div 
         initial="hidden"
         whileInView="visible"

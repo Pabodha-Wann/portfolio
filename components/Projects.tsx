@@ -121,7 +121,7 @@ const ProjectFeature = ({ project, index }: { project: any, index: number }) => 
 
 const Projects = () => {
   return (
-    <section className="w-full border-b border-slate-400/50 py-24 dark:border-slate-600/50 md:py-32">
+    <section id="work" className="w-full border-b border-slate-400/50 py-24 dark:border-slate-600/50 md:py-32">
       
       {/* Header */}
       <div className="mb-20 px-6 md:px-12">

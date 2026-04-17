@@ -35,6 +35,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* --- Premium Macro Grid --- */
 .bg-macro-grid {
   background-size: 5vw 10vh; 

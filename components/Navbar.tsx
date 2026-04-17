@@ -21,6 +21,7 @@ const Navbar = () => {
             <Link 
               key={item.href}
               href={item.href}
+              className="text-slate-500 transition-colors hover:text-black dark:text-slate-400 dark:hover:text-white"
             >
               <Icon className="h-5 w-5" strokeWidth={1.5}/>
             </Link>

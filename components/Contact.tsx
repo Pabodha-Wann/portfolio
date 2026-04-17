@@ -56,7 +56,7 @@ const Contact = () => {
   `
 
   return (
-    <section className="w-full border-b border-slate-400/50 py-24 dark:border-slate-600/50 md:py-32">
+    <section id="contact" className="w-full border-b border-slate-400/50 py-24 dark:border-slate-600/50 md:py-32">
 
       
       <div className="mb-20 px-6 md:px-12">

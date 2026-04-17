@@ -1,10 +1,10 @@
 "use client"
 import { Mail, Phone, MapPin, Send, Check } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 import { useState } from "react"
 
 const Contact = () => {
-  const slideIn = {
+  const slideIn:Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { 
       opacity: 1, 

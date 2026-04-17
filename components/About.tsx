@@ -1,12 +1,12 @@
 "use client"
 import Image from "next/image"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
 
 
 const About = () => {
     
-const slideIn = {
+const slideIn:Variants = {
   hidden: { opacity: 0, x: 50 },
   visible: { 
     opacity: 1, 

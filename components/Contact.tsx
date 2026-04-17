@@ -1,6 +1,7 @@
 "use client"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Check } from "lucide-react"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const Contact = () => {
   const slideIn = {
@@ -10,6 +11,40 @@ const Contact = () => {
       y: 0, 
       transition: { duration: 0.8, ease: "easeInOut" } 
     }
+  }
+
+  const [status,setStatus]=useState<"idle" | "submitting" | "success" | "error">("idle")
+
+  const handleSubmit = async(e:React.FormEvent<HTMLFormElement>)=>{
+    e.preventDefault()
+    setStatus("submitting")
+
+    const form = e.currentTarget
+    const data = new FormData(form)
+
+    try {
+        const response = await fetch(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`,{
+            method:"POST",
+            body:data,
+            headers:{
+                'Accept':"application/json"
+            }
+        })
+
+        if(response.ok){
+            setStatus("success")
+            form.reset()
+            setTimeout(() => setStatus("idle"), 3000)
+
+        }else{
+            setStatus("error")
+        }
+        
+    } catch (error) {
+        console.log(error)
+        setStatus("error")
+    }
+
   }
 
   const inputClass = `
@@ -97,7 +132,7 @@ const Contact = () => {
 
         
         <div className="w-full md:w-7/12">
-          <form className="flex flex-col gap-10">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-10">
 
             
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
@@ -105,13 +140,13 @@ const Contact = () => {
                 <label htmlFor="name" className="font-mono text-[9px] font-bold tracking-[0.25em] text-slate-400 uppercase">
                   Name
                 </label>
-                <input type="text" id="name" name="name" placeholder="Your name" className={inputClass} />
+                <input required type="text" id="name" name="name" placeholder="Your name" className={inputClass} />
               </div>
               <div className="flex flex-col gap-2">
                 <label htmlFor="email" className="font-mono text-[9px] font-bold tracking-[0.25em] text-slate-400 uppercase">
                   Email
                 </label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" className={inputClass} />
+                <input required type="email" id="email" name="email" placeholder="your@email.com" className={inputClass} />
               </div>
             </div>
 
@@ -120,7 +155,7 @@ const Contact = () => {
               <label htmlFor="subject" className="font-mono text-[9px] font-bold tracking-[0.25em] text-slate-400 uppercase">
                 Subject
               </label>
-              <input type="text" id="subject" name="subject" placeholder="What's this about?" className={inputClass} />
+              <input required type="text" id="subject" name="subject" placeholder="What's this about?" className={inputClass} />
             </div>
 
             
@@ -129,10 +164,11 @@ const Contact = () => {
                 Message
               </label>
               <textarea
+                required
                 id="message"
                 name="message"
                 placeholder="Write your message..."
-                rows={5}
+                rows={4}
                 className={`${inputClass} resize-none`}
               />
             </div>
@@ -141,18 +177,38 @@ const Contact = () => {
             <div className="flex sm:justify-end">
               <button
                 type="submit"
-                className="
+                disabled={status === "submitting" || status === "success"}
+                className={`
                   group flex w-full sm:w-auto items-center justify-center gap-3
-                  rounded-full border border-slate-900 bg-slate-900
+                  rounded-full border border-black bg-black
                   px-8 py-3.5 text-xs font-bold uppercase tracking-[0.2em] text-white
                   transition-all duration-300
-                  hover:bg-transparent hover:text-slate-900
-                  dark:border-white dark:bg-white dark:text-slate-900
+                  hover:bg-transparent hover:text-black
+                  dark:border-white dark:bg-white dark:text-black
                   dark:hover:bg-transparent dark:hover:text-white
-                "
+                  disabled:opacity-70 disabled:cursor-not-allowed
+                  cursor-pointer
+
+                  ${status === "success" 
+                    ? "border-purple-500 bg-purple-500 text-white dark:border-purple-500 dark:bg-purple-500 dark:text-white" 
+                    : "border-black bg-black text-white hover:bg-transparent hover:text-black dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white"
+                  }
+                `}
+
               >
-                Send Message
-                <Send size={13} className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                {status === "idle" && 
+                    (<>
+                    Send Message
+                    <Send size={13} className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    </>)
+                }
+                {status === "submitting" && "Sending..."}
+                {status === "success" && (
+                  <>
+                    Sent! <Check size={14} />
+                  </>
+                )}
+                {status === "error" && "Error - Try Again"}
               </button>
             </div>
 

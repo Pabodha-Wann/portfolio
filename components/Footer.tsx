@@ -1,5 +1,6 @@
 "use client"
 import { FiLinkedin,FiGithub ,FiInstagram,FiMail} from "react-icons/fi"
+import EmailButton from "./helper/EmailButton"
 
 const socials = [
   { 
@@ -30,7 +31,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
         
         
-        <p className="font-mono text-sm font-medium tracking-widest text-black dark:text-slate-400 uppercase">
+        <p className="font-mono text-sm font-medium tracking-widest text-black dark:text-white uppercase">
           © {new Date().getFullYear()} Pabodha Wanniarachchi.
         </p>
 
@@ -48,11 +49,13 @@ const Footer = () => {
                 className="group p-2"
               >
                 <Icon 
-                  className="text-xl text-black transition-all duration-300 group-hover:-translate-y-1 hover:opacity-70 dark:text-slate-400 dark:hover:text-white dark:hover:opacity-100" 
+                  className="text-xl text-black transition-all duration-300 group-hover:-translate-y-1 hover:opacity-70 dark:text-white dark:hover:text-white dark:hover:opacity-100" 
                 />
               </a>
             )
           })}
+
+          <EmailButton />
         </div>
 
       </div>

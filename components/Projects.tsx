@@ -24,7 +24,7 @@ const projects = [
     techStack: ["Spring Boot", "Java", "React", "MySQL", "REST API"],
     githubUrl: "https://github.com/Pabodha-Wann/ReserveX",
     liveUrl: "#",
-    image: "/reservex.jpg"
+    image: "/ReserveX.jpg"
   }
 ]
 

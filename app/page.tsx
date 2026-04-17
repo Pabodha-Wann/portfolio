@@ -7,6 +7,7 @@ import { Particles } from "@/components/ui/particles"
 import Footer from "@/components/Footer"
 import ScrollToTop from "@/components/helper/ScrollToTop"
 import Contact from "@/components/Contact"
+import SideSocials from "@/components/helper/SideSocials"
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       </div>
 
       <ScrollToTop />
+      <SideSocials />
 
     </div>
   )

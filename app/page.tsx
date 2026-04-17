@@ -1,5 +1,6 @@
 import About from "@/components/About"
 import Hero from "@/components/Hero"
+import Technologies from "@/components/Technologies"
 import { Particles } from "@/components/ui/particles"
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-6xl min-h-screen border-x border-slate-400/50 dark:border-slate-600/50">
         <Hero />
         <About />
+        <Technologies />
       </div>
 
     </div>

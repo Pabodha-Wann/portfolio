@@ -4,7 +4,7 @@ A minimal, high-performance personal portfolio showcasing full-stack development
 
 ## 🌐 Live Demo
 
-[Vercel URL]
+[[Vercel URL](https://pabodhadev.vercel.app/)]
 
 ## 🚀 Features
 
@@ -48,5 +48,5 @@ Open http://localhost:3000 in your browser to view the site.
 
 ## 📫 Connect with Me
 
-Email: pabodhawanniarchchi@gmail.com
-LinkedIn: [https://linkedin.com/in/pabodha-wanniarachchi-a0533a314]
+- Email: pabodhawanniarchchi@gmail.com
+- LinkedIn: [https://linkedin.com/in/pabodha-wanniarachchi-a0533a314]

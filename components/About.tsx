@@ -53,10 +53,8 @@ const slideIn:Variants = {
           </div>
 
           
-          <h2 className="mb-8 font-sans text-4xl font-extrabold uppercase leading-none tracking-tight text-slate-900 dark:text-white md:text-5xl lg:text-6xl">
-            Full-Stack
-            <br />
-            <span className="text-slate-300 dark:text-slate-600">Developer.</span>
+          <h2 className="mb-8 font-sans text-4xl font-extrabold uppercase leading-none tracking-tight text-slate-900 dark:text-white md:text-5xl lg:text-5xl">
+            Full-Stack<span className="text-slate-300 dark:text-slate-600">{" "}Developer.</span>
           </h2>
 
           {/* Body text */}

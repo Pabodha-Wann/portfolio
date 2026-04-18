@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import { motion, Variants } from "framer-motion"
+import { GraduationCap, Library } from "lucide-react"
 
 
 
@@ -16,7 +17,7 @@ const slideIn:Variants = {
 }
 
   return (
-    <section id="about" className="w-full border-b border-slate-400/50 px-6 py-32 dark:border-slate-600/50 md:px-12">
+    <section id="about" className="w-full border-b border-slate-400/50 px-6 py-20 dark:border-slate-600/50 md:px-12">
       <motion.div 
         initial="hidden"
         whileInView="visible"
@@ -47,13 +48,15 @@ const slideIn:Variants = {
           
           
           <div className="mb-6 flex items-center gap-2">
-            <span className="font-mono text-[11px] font-bold tracking-[0.3em] text-purple-700 uppercase">
-              // ABOUT ME
+            <div className="h-px w-8 bg-purple-600" />
+            <span className="font-mono text-[11px] font-bold tracking-[0.3em] text-slate-400 uppercase">
+              
+              ABOUT ME
             </span>
           </div>
 
           
-          <h2 className="mb-8 font-sans text-4xl font-extrabold uppercase leading-none tracking-tight text-slate-900 dark:text-white md:text-5xl lg:text-5xl">
+          <h2 className="mb-8 font-sans text-4xl font-extrabold uppercase leading-none tracking-tight text-slate-900 dark:text-white md:text-5xl lg:text-6xl">
             Full-Stack<span className="text-slate-300 dark:text-slate-600">{" "}Developer.</span>
           </h2>
 
@@ -81,6 +84,72 @@ const slideIn:Variants = {
               </span>{" "}
               to streamline deployments.
             </p>
+          </div>
+
+          <div className="mt-12 flex flex-col gap-0">
+
+  {/* University */}
+          <div className="group flex gap-6 border-t border-slate-200 py-8 dark:border-slate-800">
+            
+            
+            <div className="flex w-28 shrink-0 flex-col items-start gap-2 pt-0.5">
+              <GraduationCap size={16} className="text-purple-600" />
+              <span className="font-mono text-[11px] font-bold tracking-[0.2em] text-slate-400 uppercase">
+                2023 – Now
+              </span>
+            </div>
+
+            
+            <div className="flex flex-col gap-1">
+              <h3 className="text-base font-bold tracking-tight text-slate-900 dark:text-white">
+                BSc (Hons) Software Engineering
+              </h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400">
+                University of Kelaniya
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400 dark:text-slate-600 max-w-sm">
+                Specializing in Net-Centric Web Application Development, Data Science & Engineering, Business Engineering, and Mobile Computing.
+              </p>
+              <span className="mt-3 font-mono text-[13px] font-bold tracking-[0.15em] text-purple-600 uppercase">
+                CGPA: 3.94 / 4.0
+              </span>
+            </div>
+          </div>
+
+          {/* A/L */}
+          <div className="group flex gap-6 border-t border-slate-200 py-8 dark:border-slate-800">
+            
+            
+            <div className="flex w-28 shrink-0 flex-col items-start gap-2 pt-0.5">
+              <Library size={16} className="text-purple-600" />
+              <span className="font-mono text-[11px] font-bold tracking-[0.2em] text-slate-400 uppercase">
+                2019 – 2023
+              </span>
+            </div>
+
+            
+            <div className="flex flex-col gap-1">
+              <h3 className="text-base font-bold tracking-tight text-slate-900 dark:text-white">
+                GCE Advanced Level
+              </h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400">
+                Sujatha Vidyalaya, Matara
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400 dark:text-slate-600 max-w-sm">
+                Completed coursework in Mathematics, Chemistry, and Physics.
+              </p>
+              <span className="mt-1 font-mono text-[12px] tracking-[0.15em] text-purple-600 uppercase">
+                  3A Passes
+              </span>
+              <span className="mt-3 font-mono text-[13px] font-bold tracking-[0.15em] text-purple-600 uppercase">
+                Z-Score: 1.83
+              </span>
+            </div>
+          </div>
+
+
+          <div className="border-t border-slate-200 dark:border-slate-800" />
+
           </div>
 
 

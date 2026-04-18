@@ -38,7 +38,7 @@ const SideSocials = () => {
               </span>
 
               
-              <div className="flex h-10 w-10 items-center justify-center rounded-full text-slate-700 transition-all duration-300 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-slate-900">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full text-slate-700 dark:text-white transition-all duration-300 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-slate-900">
                 <Icon size={18} strokeWidth={1.5} />
               </div>
             </a>

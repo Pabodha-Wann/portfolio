@@ -7,7 +7,10 @@ const Hero = () => {
   return (
     
     <div className="relative flex h-[85vh] flex-col justify-between border-y border-slate-400/50 px-6 pt-50 pb-20 lg:pt-25 lg:pb-20 dark:border-slate-600/50 md:px-12">
+
+      {/* Grid & Gradient */}
       <div className="absolute inset-0 z-0 bg-macro-grid bg-grid-mask pointer-events-none" />
+      <div className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-purple-500/20 blur-[120px]" />
       
       
       <motion.div 

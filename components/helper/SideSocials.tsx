@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi"
 
 const socials = [
-  { name: "LinkedIn", icon: FiLinkedin, link: "www.linkedin.com/in/pabodha-wanniarachchi-a0533a314" }, 
+  { name: "LinkedIn", icon: FiLinkedin, link: "https://linkedin.com/in/pabodha-wanniarachchi-a0533a314" }, 
   { name: "GitHub", icon: FiGithub, link: "https://github.com/Pabodha-Wann" },
   { name: "Instagram", icon: FiInstagram, link: "https://www.instagram.com/pabodha_wanniarachchi/" },
 ]

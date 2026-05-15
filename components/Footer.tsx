@@ -11,7 +11,7 @@ const socials = [
   { 
     name: "LinkedIn", 
     icon: FiLinkedin, 
-    link: "www.linkedin.com/in/pabodha-wanniarachchi-a0533a314"
+    link: "https://linkedin.com/in/pabodha-wanniarachchi-a0533a314"
   },
   { 
     name: "Instagram", 

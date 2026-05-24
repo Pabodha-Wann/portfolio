@@ -39,6 +39,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --- Custom text selection color --- */
+::selection {
+  background-color: rgba(192, 132, 252, 0.40); /* purple-400 at 40% — visible light purple */
+  color: inherit;
+}
+
 /* --- Premium Macro Grid --- */
 .bg-macro-grid {
   background-size: 60px 60px; 

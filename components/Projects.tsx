@@ -8,6 +8,16 @@ import { FaGithub } from "react-icons/fa"
 const projects = [
   {
     id: "01",
+    title: "PillPulse",
+    category: "Microservices System",
+    description: "A distributed microservices architecture designed to track medicine availability and precisely locate pharmacies. Built to handle complex, decoupled service communications while ensuring high availability and fault tolerance across the health-tech ecosystem.",
+    techStack: ["Spring Boot", "Microservices", "Java", "Docker", "REST API"],
+    githubUrl: "https://github.com/Pabodha-Wann/pillpulse", 
+    liveUrl: "#",
+    image: "/pillpulse.png"
+  },
+  {
+    id: "02",
     title: "AetherTech Platform",
     category: "E-Commerce Architecture",
     description: "A comprehensive MERN-stack e-commerce platform designed for refurbished tech and computer equipment. Engineered with a heavy focus on secure authentication, dynamic brand management, and scalable state handling.",
@@ -17,7 +27,7 @@ const projects = [
     image: "/aethertechi.jpg", 
   },
   {
-    id: "02",
+    id: "03",
     title: "ReserveX Engine",
     category: "Event Booking System",
     description: "A high-performance stall booking system developed for exhibition management. Architected a robust backend using Spring Boot to handle complex reservation logic, connected to a seamless React frontend for real-time user interaction.",
@@ -25,6 +35,26 @@ const projects = [
     githubUrl: "https://github.com/Pabodha-Wann/ReserveX",
     liveUrl: "#",
     image: "/ReserveX.jpg"
+  },
+  {
+    id: "04",
+    title: "DevDocs RAG Pipeline",
+    category: "AI / Search Architecture",
+    description: "An AI-powered documentation assistant leveraging Retrieval-Augmented Generation. Engineered a robust ingestion pipeline using FastAPI and HuggingFace embeddings, storing highly-dimensional vectors efficiently within pgvector for rapid, repository-specific querying.",
+    techStack: ["FastAPI", "Python", "pgvector", "HuggingFace", "LLMs"],
+    githubUrl: "https://github.com/Pabodha-Wann/DevDocs", 
+    liveUrl: "https://devdocs-ashy.vercel.app/",
+    image: "/devdocs.png" 
+  },
+  {
+    "id": "05",
+    "title": "QuickBuild Material Estimator",
+    "category": "AI / Web Application",
+    "description": "A full-stack AI-powered application simplifying home renovation planning for the Sri Lankan market. Integrated Google Gemini 2.5 Flash to convert natural language project descriptions into structured material checklists, LKR cost estimates, and step-by-step instructions.",
+    "techStack": ["React", "Vite", "Flask", "Python", "Google Gemini API", "Tailwind CSS"],
+    "githubUrl": "https://github.com/Pabodha-Wann/quickbuild-ai",
+    "liveUrl": "https://quickbuild-ai.vercel.app/",
+    "image": "/quickbuild.png"
   }
 ]
 

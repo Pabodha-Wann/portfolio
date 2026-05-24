@@ -61,14 +61,17 @@ const Hero = () => {
                 </motion.p>
 
                 <div className="flex gap-3">
-                  <motion.button 
-                  initial={{ opacity: 0, x: -100 }}
+                  <motion.a 
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false, amount: 0.1 }}
                     transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
                     className="bg-black text-white font-mono py-3 px-7 w-fit rounded-3xl flex gap-3 justify-center items-center dark:bg-white dark:text-black cursor-pointer">
                     Resume <Download size={16}/>
-                  </motion.button>
+                  </motion.a>
 
                   <motion.a
                     href="#work"

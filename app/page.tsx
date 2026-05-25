@@ -2,6 +2,7 @@ import About from "@/components/About"
 import Blogs from "@/components/Blog"
 import Hero from "@/components/Hero"
 import Projects from "@/components/Projects"
+import GitHubPulse from "@/components/GitHubPulse"
 import Technologies from "@/components/Technologies"
 import { Particles } from "@/components/ui/particles"
 import Footer from "@/components/Footer"
@@ -24,6 +25,7 @@ export default function Home() {
         <About />
         <Technologies />
         <Projects />
+        <GitHubPulse />
         <Blogs/>
         <Contact />
         

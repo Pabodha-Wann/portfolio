@@ -114,7 +114,7 @@ const About = () => {
               Specializing in Net-Centric Web Application Development, Data Science &amp; Engineering, Business Engineering, and Mobile Computing.
             </p>
             <span className="mt-3 font-mono text-[13px] font-bold tracking-[0.15em] text-purple-600 uppercase">
-              CGPA: 3.94 / 4.0
+              CGPA: 3.97 / 4.0
             </span>
           </div>
         </div>

@@ -45,7 +45,7 @@ const Navbar = () => {
               </AnimatePresence>
 
               <Icon className="relative h-4 w-4 shrink-0" strokeWidth={1.5} />
-              <span className="relative font-mono text-[11px] font-semibold tracking-wider uppercase">
+              <span className="relative hidden md:inline font-mono text-[11px] font-semibold tracking-wider uppercase">
                 {item.name}
               </span>
             </Link>

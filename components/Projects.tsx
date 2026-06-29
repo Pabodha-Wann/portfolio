@@ -14,7 +14,7 @@ const projects = [
     techStack: ["Spring Boot", "Microservices", "Java", "Docker", "REST API"],
     githubUrl: "https://github.com/Pabodha-Wann/pillpulse",
     liveUrl: "#",
-    image: "/pillpulse.png"
+    image: "/pillpulse3.png"
   },
   {
     id: "02",
